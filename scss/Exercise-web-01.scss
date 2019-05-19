@@ -1,0 +1,240 @@
+@import "bootstrap/scss/_functions.scss";
+@import "bootstrap/_variables.scss";
+@import "bootstrap/scss/bootstrap.scss";
+
+.nav{
+	border-bottom: 1px solid $gray-200;
+}
+.title a.text-primary{
+	text-decoration: none;
+}
+
+.text{
+	outline: 0;
+	width: 100%;
+}
+.search-group{
+	width: 30%;
+	@include media-breakpoint-down(sm){
+		width: 100%;
+	}
+}
+
+.user{ 
+	a{
+    cursor: pointer;
+    letter-spacing: 1px;
+		text-decoration: none;
+		transition: all .3s;
+		&:hover{
+			opacity: .7;
+		}
+	}
+	i{
+		color:$purple;
+	} 
+}
+
+.navbar-toggler.bg-dark{
+	transition: all .3s;
+	&:hover{
+		background: $primary !important;
+	}
+}
+
+.nav-link{
+	&.active{
+		color: $purple !important;
+		font-weight: 700;
+	}
+	&:hover{
+		color: $purple !important;
+	}
+}
+
+.dropdown-menu{
+  @include media-breakpoint-down(sm){
+		max-width: 300px ;
+		border:0;
+		margin: 0 auto;
+	}
+}
+
+.dropdown-toggle::after{
+	color: $purple;
+}
+
+.banner-bg{
+	background: url(../img/banner1.jpg) no-repeat center center;
+	background-size: cover;
+	min-height: 720px;
+	@include media-breakpoint-down(md){
+		min-height: 550px;
+		@include media-breakpoint-down(xs){
+			min-height: 450px;
+		}
+	}
+	.darken{
+		height: 720px;
+		background: rgba(0,0,0,.5);
+		@include media-breakpoint-down(md){
+			height: 550px;
+			@include media-breakpoint-down(xs){
+				height: 450px;
+			}
+		}
+	}
+} 
+.banner-text{
+	max-width: 600px;
+	letter-spacing: 1px;
+	@include media-breakpoint-down(xs){
+		max-width: 80%;
+	}
+	.display-4{
+		font-weight: 400;
+	}
+	.text{
+		line-height: 1.7;
+	}
+}
+
+.display-4{
+	@include media-breakpoint-down(xs){
+		font-size: 2.5rem;
+	}
+}
+
+.display-5{
+	font-weight: 400;
+	font-size: 3rem;
+	@include media-breakpoint-down(xs){
+		font-size: 2.2rem;
+	}
+}
+
+.datas{
+	@include media-breakpoint-down(sm){
+		margin-bottom: 2rem;
+		@include media-breakpoint-down(xs){
+			text-align: center;	
+		}
+	}
+}
+
+.example,.events{
+	a{
+		text-decoration: none;
+	}
+	i{
+		transition: all .3s;
+		color: $white;
+	  &:hover{
+		  color: $blue; 
+	  }
+	}
+}
+
+.form-img{
+	background: url(../img/banner3.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.appointment{
+	@include media-breakpoint-down(md){
+		font-size: 1.3rem;
+	}
+}
+
+.event-description{
+	background: $light-green;
+	max-width: 500px;
+	p{
+		font-size: 16px;
+	}
+	span{
+		letter-spacing: 1px;
+	}
+}
+
+.reviews-img{
+	background: url(../img/banner2.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.reviews-example{
+	position: relative;
+	&:after{
+		width: 0;
+    height: 0;
+    border-top: 16px solid #fff;
+    border-right: 16px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    right: 13px;
+	}
+	i{
+		color:$gray-200;
+	}
+}
+
+.reviews-people{
+	img{
+		max-height: 60px;
+		padding: 4px;
+		background: $yellow;
+	}
+}
+
+.reviews-star{
+	a{
+		text-decoration: none;
+		color: $white;
+		transition: all .3s;
+		&:hover{
+			color: $yellow;
+		}
+	}
+	i{
+		font-size: 12px;
+	}
+}
+
+.Navigation-list{
+	a{
+		text-decoration: none;
+		transition: all .3s;
+		&:hover{
+			text-decoration: none;
+			color: $gray-500 !important;
+		}
+	}
+}
+
+.Contact-list{
+	a{
+		color: $primary !important;
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+			color: rgba($primary,.9) !important;
+		}
+	}
+}
+
+.Stay-date{
+	.form{
+		position: relative;
+		.btn{
+			position: absolute;
+			right: 3px;
+			top: 5px;
+		}
+	}
+	.email{
+		font-size: 18px;
+	}
+
+
+}
